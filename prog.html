@@ -5,7 +5,29 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>ProgressBar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>            
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                overflow-x: hidden;
+            }
+            header {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #eee;
+                flex-direction: column;
+                padding: 15px;
+            }
+            main{
+                width: 80%;
+                margin: auto;
+            }
+            h1, h3{
+                margin: 0;
+            }
             svg {
                 width: 300px;
                 display: block;
@@ -19,7 +41,8 @@
         </style> 
             
     </head>
-    <body>   
+    <body>
+    <header>
         <h1>Pure Javascript plugins</h1>
         <h3>Three Types of Progressbar in here</h3>
         <ul>
@@ -27,11 +50,12 @@
             <li>Leniar Gradient Color</li>
             <li>Radial Gradient Color</li>
         </ul>
-        
+    </header>
+    <main>
         <div id="progresbar"></div>     
 		<div id="progresbar2"></div>
         <div id="progresbar3"></div>     
-            
+    </main>        
         <script src="script.js"></script>    
         <script>
             progressbar('#progresbar3', {

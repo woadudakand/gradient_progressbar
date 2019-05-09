@@ -83,7 +83,7 @@ function progressbar (elem, obj) {
                     } else{
                         
                         }              
-                    },100, clearInterval(clear));
+                    },10, clearInterval(clear));
                  }
                 forEvent();                           
                 window.addEventListener('scroll', () => {
