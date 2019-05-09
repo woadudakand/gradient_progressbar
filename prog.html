@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ProgressBar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .height{
+                height: 1500px;
+            }
+            svg {
+                width: 300px;
+                display: block;
+                transform: rotate(-90deg);
+                float: left;
+            }
+            svg text{
+                transform: rotate(90deg);
+                transform-origin: 50% 50%;
+            }           
+        </style> 
+            
+    </head>
+    <body>   
+    <div class="height">
+        <div id="progresbar"></div>     
+		<div id="progresbar2"></div>
+        <div id="progresbar3"></div>     
+        <div id="progresbar4"></div>     
+    </div>
+        <script src="script.js"></script>    
+        <script>       
+            progressbar('#progresbar', {
+                backStrokeColor     : '#eee',
+                backFillColor       : 'none',
+                backStrokeWidth     : '4',                               
+                radius              : '30',               
+                frontStrokeColor    : '#f00',
+                frontStrokeWidth    : '6',
+                frontFillColor      : 'none',
+                textColor           : '#f00',
+                strokeLineCap       : 'butt',                
+                parcent             : '80',
+                gradient            : 'linear',
+                gradColor           : [
+                                        {
+                                            offset: "0%",
+                                            stopColor : '#6b0404',
+                                            stopOpacity : '1'
+                                        },
+                                        {
+                                            offset: "40%",
+                                            stopColor : 'red',
+                                            stopOpacity : '1'
+                                        }
+                                        ]
+            });
+            progressbar('#progresbar2', {
+                backStrokeColor     : '#eee',
+                backFillColor       : 'none',
+                backStrokeWidth     : '4',                               
+                radius              : '30',               
+                frontStrokeColor    : '#f00',
+                frontStrokeWidth    : '6',
+                frontFillColor      : 'none',
+                strokeLineCap       : 'round',                
+                parcent             : '90',
+                gradient            : 'radial',
+                gradColor           : [
+                                        {
+                                            offset: "95%",
+                                            stopColor : 'red',
+                                            stopOpacity : '.3'
+                                        },
+                                        {
+                                            offset: "100%",
+                                            stopColor : 'red',
+                                            stopOpacity : '1'
+                                        }
+                                        ]
+            });
+
+            progressbar('#progresbar3', {
+                backStrokeColor     : '#eee',
+                backFillColor       : 'none',
+                backStrokeWidth     : '4',                               
+                radius              : '30',               
+                frontStrokeColor    : '#ffcdc2',
+                frontStrokeWidth    : '6',
+                frontFillColor      : 'none',
+                strokeLineCap       : 'round',                
+                parcent             : '50'                
+            });
+
+            progressbar('#progresbar4', {
+                backStrokeColor     : '#eee',
+                backFillColor       : 'none',
+                backStrokeWidth     : '4',                               
+                radius              : '30',               
+                frontStrokeColor    : '#f00',
+                frontStrokeWidth    : '6',
+                frontFillColor      : 'none',
+                strokeLineCap       : 'round',                
+                parcent             : '50'
+            });		
+			
+          
+        </script>
+    </body>
+</html>
