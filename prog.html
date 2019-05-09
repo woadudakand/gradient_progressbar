@@ -5,10 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>ProgressBar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            .height{
-                height: 1500px;
-            }
+        <style>            
             svg {
                 width: 300px;
                 display: block;
@@ -23,14 +20,31 @@
             
     </head>
     <body>   
-    <div class="height">
+        <h1>Pure Javascript plugins</h1>
+        <h3>Three Types of Progressbar in here</h3>
+        <ul>
+            <li>Static Color</li>
+            <li>Leniar Gradient Color</li>
+            <li>Radial Gradient Color</li>
+        </ul>
+        
         <div id="progresbar"></div>     
 		<div id="progresbar2"></div>
         <div id="progresbar3"></div>     
-        <div id="progresbar4"></div>     
-    </div>
+            
         <script src="script.js"></script>    
-        <script>       
+        <script>
+            progressbar('#progresbar3', {
+                backStrokeColor     : '#eee',
+                backFillColor       : 'none',
+                backStrokeWidth     : '4',                               
+                radius              : '30',               
+                frontStrokeColor    : '#ffcdc2',
+                frontStrokeWidth    : '6',
+                frontFillColor      : 'none',
+                strokeLineCap       : 'round',                
+                parcent             : '50'                
+            });       
             progressbar('#progresbar', {
                 backStrokeColor     : '#eee',
                 backFillColor       : 'none',
@@ -79,33 +93,7 @@
                                             stopOpacity : '1'
                                         }
                                         ]
-            });
-
-            progressbar('#progresbar3', {
-                backStrokeColor     : '#eee',
-                backFillColor       : 'none',
-                backStrokeWidth     : '4',                               
-                radius              : '30',               
-                frontStrokeColor    : '#ffcdc2',
-                frontStrokeWidth    : '6',
-                frontFillColor      : 'none',
-                strokeLineCap       : 'round',                
-                parcent             : '50'                
-            });
-
-            progressbar('#progresbar4', {
-                backStrokeColor     : '#eee',
-                backFillColor       : 'none',
-                backStrokeWidth     : '4',                               
-                radius              : '30',               
-                frontStrokeColor    : '#f00',
-                frontStrokeWidth    : '6',
-                frontFillColor      : 'none',
-                strokeLineCap       : 'round',                
-                parcent             : '50'
-            });		
-			
-          
+            });                      
         </script>
     </body>
 </html>
