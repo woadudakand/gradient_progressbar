@@ -67,3 +67,5 @@ This script fore plain color
 >                `stopOpacity : '1'`
 >              `}`
               ]
+***
+### For The Clear Concept Please See The Markup Code 
