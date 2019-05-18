@@ -69,3 +69,4 @@ This script fore plain color
               ]
 ***
 ### For The Clear Concept Please See The Markup Code 
+Note: This is Open source Plugins
