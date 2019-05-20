@@ -1,5 +1,11 @@
-## Progress bar
-This is pure JavaScript Progress bar and very Easy to customization.
+# Progress bar
+This is pure JavaScript Progress bar plugins
+
+# License 
+```
+Don`t use unsocial or illigle project
+```
+
 ## Three types of Progress bar in here
 * Plain color
 * Linear gradient
@@ -8,7 +14,8 @@ This is pure JavaScript Progress bar and very Easy to customization.
 ### Add only a script file in your html page
 `<script src='script.js'></script>`
 ### Add this css in your style sheet
-`
+
+```
 svg {
      width: 300px;
      display: block;
@@ -19,9 +26,14 @@ svg text{
           transform: rotate(90deg);
           transform-origin: 50% 50%;
  }      
-`
+```
+
 ### Add this markup in your markup sheet
-`<div id="progresbar"></div> `
+
+```
+<div id="progresbar"></div> 
+```
+
 ### Also add this script in your script file
 This script fore plain color
 ***
