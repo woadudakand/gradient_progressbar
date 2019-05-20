@@ -39,56 +39,56 @@ This script fore plain color
 ***
 
 ```
->    <script>
->         progressbar('#progresbar3', {
->                 backStrokeColor     : '#eee',
->                 backFillColor       : 'none',
->                 backStrokeWidth     : '4',                               
->                 radius              : '30',               
->                 frontStrokeColor    : '#ffcdc2',
->                 frontStrokeWidth    : '6',
->                 frontFillColor      : 'none',
->                 strokeLineCap       : 'round',                
->                 parcent             : '50'                
->             });       
->     </script>
+    <script>
+         progressbar('#progresbar3', {
+                 backStrokeColor     : '#eee',
+                 backFillColor       : 'none',
+                 backStrokeWidth     : '4',                               
+                 radius              : '30',               
+                 frontStrokeColor    : '#ffcdc2',
+                 frontStrokeWidth    : '6',
+                 frontFillColor      : 'none',
+                 strokeLineCap       : 'round',                
+                 parcent             : '50'                
+             });       
+    </script>
 ```
 
 ***
 ### You can change Plain color to linear gradient use this
 
 ```
-> gradient : 'linear',
-> gradColor: [
->              {
->                offset: "0%",
->                stopColor : '#6b0404',
->                stopOpacity : '1'
->              },
->              {
->                offset: "40%",
->                stopColor : 'red',
->                stopOpacity : '1'
->              }
->             ]
+ gradient : 'linear',
+ gradColor: [
+              {
+                offset: "0%",
+                stopColor : '#6b0404',
+                stopOpacity : '1'
+              },
+              {
+                offset: "40%",
+                stopColor : 'red',
+                stopOpacity : '1'
+             }
+             ]
 ```
               
 ### You can also change Plain color to radial gradient use this
 
 ```
-> gradient : 'radial',
-> gradColor: [
->              {
->                offset: "0%",
->                stopColor : '#6b0404',
->                stopOpacity : '1'
->              },
->              {
->                offset: "40%",
->                stopColor : 'red',
->                stopOpacity : '1'
->              }
->             ]
+ gradient : 'radial',
+ gradColor: [
+              {
+                offset: "0%",
+                stopColor : '#6b0404',
+                stopOpacity : '1'
+              },
+              {
+                offset: "40%",
+                stopColor : 'red',
+                stopOpacity : '1'
+              }
+             ]
 ```
               
               
